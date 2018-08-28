@@ -1,0 +1,34 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">{{Col1Title}}
+        <input  [(ngModel)]="searchName" >
+       </th>
+      <th scope="col">{{Col2}}
+        <input [(ngModel)]="searchRank" >
+      </th>
+      <th scope="col">{{Col3}}
+      <input [(ngModel)]="searchPoint" > 
+    </th>  
+    <th>
+      <app-search-button #searchbutton
+                  [searchName]="searchName" 
+                  [searchRank]="searchRank" 
+                  [searchPoint]="searchPoint" 
+                  [recordList]="recordList"
+                  ></app-search-button>
+    </th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let i of  searchbutton.recordsFound">
+    <tr>
+      <td>{{i.name}}</td>
+      <td>{{i.rank}}</td>
+      <td>{{i.point}}</td>
+      <td></td>
+    </tr>
+  </tbody>
+  <p>{{searchName}} | {{searchRank}} | {{searchPoint}}</p>
+</table>
+
+
