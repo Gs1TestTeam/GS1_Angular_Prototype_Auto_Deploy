@@ -26,6 +26,14 @@ import { GtagModule } from 'angular-gtag';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchButtonComponent } from './search-button.component';
 
+import { GS1UIShowLogoIF } from './gs1-ui-components-classes/GS1UIShowLogoIF';
+import { GS1UIShowFooterIF} from './gs1-ui-components-classes/GS1UIShowFooterIF';
+import { GS1UIShowNavigationIF } from './gs1-ui-components-classes/GS1UIShowNavigationIF';
+import { GS1UIShowChartIF } from './gs1-ui-components-classes/GS1UIShowChartIF';
+import { GS1UIShowTableIF } from './gs1-ui-components-classes/GS1UIShowTableIF';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +54,6 @@ import { SearchButtonComponent } from './search-button.component';
     Gs1UiShowBackButtonComponent,
     Gs1UiShowTitleComponent,
     SearchButtonComponent
-
   ],
   imports: [
     BrowserModule,
