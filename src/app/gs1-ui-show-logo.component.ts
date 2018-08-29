@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { GS1UIShowLogoIF } from './gs1-ui-components-classes/GS1UIShowLogoIF';
+import { GS1UIShowLogoIF } from './GS1UIShowLogoIF';
 
 @Component({
   selector: 'app-gs1-ui-show-logo',

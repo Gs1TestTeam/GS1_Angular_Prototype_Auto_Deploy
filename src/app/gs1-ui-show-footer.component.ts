@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {GS1UIShowFooterIF} from './gs1-ui-components-classes/GS1UIShowFooterIF';
+import {GS1UIShowFooterIF} from './GS1UIShowFooterIF';
 
 @Component({
   selector: 'app-gs1-ui-show-footer',

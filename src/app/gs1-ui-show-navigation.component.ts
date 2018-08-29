@@ -1,5 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
-import {GS1UIShowNavigationIF} from './gs1-ui-components-classes/GS1UIShowNavigationIF';
+import {GS1UIShowNavigationIF} from './GS1UIShowNavigationIF';
 import { GS1GetMenuListService } from './gs1-get-menu-list.service';//added by Olga
 import { MenuItem } from './MenuItem'; //added by Olga
 
