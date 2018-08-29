@@ -7,7 +7,7 @@
  * Created date: 2018.08.13
  * 
 ********************************************************************************/  
-export interface GS1UIShowFooterIF extends GS1UIComponentsIF {
+export interface GS1UiShowFooterIF extends GS1UiComponentsIF {
     address: string;
     email: string;
     phone: string;

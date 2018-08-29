@@ -1,12 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {GS1UIShowFooterIF} from './GS1UIShowFooterIF';
+import {GS1UiShowFooterIF} from './GS1UiShowFooterIF';
 
 @Component({
   selector: 'app-gs1-ui-show-footer',
   templateUrl: './gs1-ui-show-footer.component.html',
   styleUrls: ['./gs1-ui-show-footer.component.css']
 })
-export class GS1UiShowFooterComponent implements OnInit, GS1UIShowFooterIF {
+export class GS1UiShowFooterComponent implements OnInit, GS1UiShowFooterIF {
 
   constructor() { }
 

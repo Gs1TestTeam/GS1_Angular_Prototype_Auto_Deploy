@@ -7,7 +7,7 @@
  * Created date: 2018.08.13
  *
 ********************************************************************************/
-export interface GS1UIShowTableIF extends GS1UIComponentsIF {
+export interface GS1UiShowTableIF extends GS1UiComponentsIF {
     // tableTitle: string;
     // tableRef: string;
     // tableColor: string;

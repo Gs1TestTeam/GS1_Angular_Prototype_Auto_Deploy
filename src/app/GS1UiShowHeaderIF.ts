@@ -7,6 +7,6 @@
  * Created date: 2018.08.13
  * 
 ********************************************************************************/  
-export interface GS1UIShowHeaderIF extends GS1UIComponentsIF {
+export interface GS1UiShowHeaderIF extends GS1UiComponentsIF {
 
 }

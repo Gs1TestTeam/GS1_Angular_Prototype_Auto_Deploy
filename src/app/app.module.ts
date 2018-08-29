@@ -26,14 +26,6 @@ import { GtagModule } from 'angular-gtag';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchButtonComponent } from './search-button.component';
 
-import { GS1UIShowLogoIF } from './GS1UIShowLogoIF';
-import { GS1UIShowFooterIF} from './GS1UIShowFooterIF';
-import { GS1UIShowNavigationIF } from './GS1UIShowNavigationIF';
-import { GS1UIShowChartIF } from './GS1UIShowChartIF';
-import { GS1UIShowTableIF } from './GS1UIShowTableIF';
-
-
-
 @NgModule({
   declarations: [
     AppComponent,

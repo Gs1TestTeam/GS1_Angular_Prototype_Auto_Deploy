@@ -7,7 +7,7 @@
  * Created date: 2018.08.13
  * 
 ********************************************************************************/  
-export interface GS1UIShowListIF extends GS1UIComponentsIF {
+export interface GS1UiShowListIF extends GS1UiComponentsIF {
     listName: string;
     listRef: string;
     listSymbol: string;

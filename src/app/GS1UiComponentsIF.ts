@@ -11,7 +11,7 @@ const DEFAULT_SLOGAN1: string = "Welcome to GS1 Canada";
 const DEFAULT_SLOGAN2: string = "The Global Language of Business";
 const DEFAULT_LOGO_SIZE_W: Number = 60;
 const DEFAULT_LOGO_SIZE_H: Number = 60;
-interface GS1UIComponentsIF extends GS1CompnentsIF {
+interface GS1UiComponentsIF extends GS1CompnentsIF {
     displayWidth?: Number;
     displayHeight?: Number;
 }

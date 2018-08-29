@@ -7,7 +7,7 @@
  * Created date: 2018.08.13
  * 
 ********************************************************************************/  
-export interface GS1UIShowLogoIF extends GS1UIComponentsIF {
+export interface GS1UiShowLogoIF extends GS1UiComponentsIF {
 
     logoWidth: Number;
     logoHeight: Number;

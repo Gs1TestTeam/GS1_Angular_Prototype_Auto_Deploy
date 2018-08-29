@@ -7,7 +7,7 @@
  * Created date: 2018.08.13
  * 
 ********************************************************************************/  
-export interface GS1UIShowChartIF extends GS1UIComponentsIF {
+export interface GS1UiShowChartIF extends GS1UiComponentsIF {
     chartTitle: string;
     chartStyle: string;
     chartSize: Number;
