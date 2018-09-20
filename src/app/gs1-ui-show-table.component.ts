@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { GS1UiShowTableIF } from './GS1UiShowTableIF';
+import { GS1UiShowTableIF } from './gs1-ui-components-classes/GS1UiShowTableIF';
 import { Gs1GetRecordListServiceService } from './gs1-get-record-list-service.service';
 import { Record } from './Record';
 

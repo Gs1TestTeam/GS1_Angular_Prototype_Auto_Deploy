@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, OnDestroy, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GS1GetGoogleAnaliticsService } from './gs1-get-google-analitics.service';
-import { GS1UiShowChartIF } from './GS1UiShowChartIF';
+import { GS1UiShowChartIF } from './gs1-ui-components-classes/GS1UiShowChartIF';
 import { Chart } from 'chart.js';
 import { Gtag } from 'angular-gtag';
 
