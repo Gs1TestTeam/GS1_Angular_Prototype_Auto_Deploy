@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,11 +21,13 @@ import { Gs1GoogleAnalList3Component } from './gs1-google-anal-list3.component';
 import { ChartsModule } from 'ng2-charts'; ​
 import { FormsModule } from '@angular/forms';
 import { GS1GetGoogleAnaliticsService } from './gs1-get-google-analitics.service';
+import { GS1GetMigartionDiffsService } from './gs1-get-migartion-diffs.service';
 import { Gs1UiShowBackButtonComponent } from './gs1-ui-show-back-button.component';
 import { Gs1UiShowTitleComponent } from './gs1-ui-show-title.component';
 import { GtagModule } from 'angular-gtag';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchButtonComponent } from './search-button.component';
+
 
 @NgModule({
   declarations: [
@@ -53,9 +56,10 @@ import { SearchButtonComponent } from './search-button.component';
     ChartsModule,
     FormsModule,
     GtagModule.forRoot({ trackingId: 'UA-123890110-1', trackPageviews: true }),
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    HttpClientModule
   ],
-  providers: [GS1GetGoogleAnaliticsService],
+  providers: [GS1GetGoogleAnaliticsService, GS1GetMigartionDiffsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
