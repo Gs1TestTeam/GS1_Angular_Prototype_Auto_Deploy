@@ -37,6 +37,18 @@ export class Gs1GoogleAnalList3Component implements OnInit, OnDestroy {
     );
   }
 
+  //highlight differing rows
+  compareRows( row:GS1UiDifferenceRowsIF ) {
+    let highlight: boolean = false;
+    highlight = (row.pid != row.pid_dw ? true : false );
+    highlight = (row.gtin != row.gtin_dw ? true : false );
+    highlight = (row.gln != row.gln_dw ? true : false );
+
+    return {
+      'danger': highlight 
+    };
+  }
+
   // call the "unsubscribe()" methods on any saved subscriptions within the component
   ngOnDestroy() {
 

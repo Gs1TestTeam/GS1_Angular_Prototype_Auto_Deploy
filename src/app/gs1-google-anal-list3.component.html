@@ -2,12 +2,34 @@
 <div class="container">
         <app-gs1-ui-show-title [pageTitle]="pageTitle">
 		</app-gs1-ui-show-title>
-		<div class="row body-row" *ngFor='let row of diffRows'>
+	<!--	<div class="row body-row" *ngFor='let row of diffRows'>
 				<div class="col-xs-3 body-column">{{row.pid}}</div>
 				<div class="col-xs-3 body-column">{{row.pid_dw}}</div>
 				<div class="col-xs-3 body-column"></div>
 				<div class="col-xs-3 body-column"></div>
 		</div>
-		<br/><br/>
+		<br/><br/>-->
+		<table class="table table-bordered">
+			<thead >
+				<tr>
+					<th>pid</th>
+					<th>pid_dw</th>
+					<th>gtin</th>
+					<th>gtin_dw</th>	
+					<th>gln</th>
+					<th>gln_dw</th>									
+				</tr>			
+			</thead>
+			<tbody>
+				<tr [ngClass]="compareRows(row)" *ngFor='let row of diffRows'>
+					<td >{{row.pid}}</td>
+					<td >{{row.pid_dw}}</td>
+					<td >{{row.gtin}}</td>
+					<td >{{row.gtin_dw}}</td>		
+					<td >{{row.gln}}</td>
+					<td >{{row.gln_dw}}</td>											
+				</tr>			
+			</tbody>
+		</table>
 </div>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
