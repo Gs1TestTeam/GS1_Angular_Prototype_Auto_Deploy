@@ -8,10 +8,24 @@ import { GS1UiDifferenceRowsIF } from './gs1-ui-components-classes/GS1UiDifferen
 export class GS1GetMigartionDiffsService {
 
   urlString = 'https://enigmatic-hamlet-75507.herokuapp.com';
+  //urlString = 'http://localhost:8081';
   
   constructor(private http: HttpClient) { }
   
   getDiffRows(): Observable<GS1UiDifferenceRowsIF[]> {
     return this.http.get<GS1UiDifferenceRowsIF[]>(this.urlString + '/differences');
   }
+
+  getSourceDataCount(): Observable<Number[]> {
+    return this.http.get<Number[]>(this.urlString + '/source_count');
+  }
+
+  getTargetDataCount(): Observable<Number[]> {
+    return this.http.get<Number[]>(this.urlString + '/target_count');
+  }
+  
+  getDiffDataCount(): Observable<Number[]> {
+    return this.http.get<Number[]>(this.urlString + '/difference_count');
+  } 
+
 }
