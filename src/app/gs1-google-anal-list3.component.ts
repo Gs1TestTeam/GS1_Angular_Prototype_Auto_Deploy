@@ -14,24 +14,37 @@ export class Gs1GoogleAnalList3Component implements OnInit, OnDestroy {
   pageTitle: string = "GS1 Migration Data Integrity";
 
   diffRows: GS1UiDifferenceRowsIF[] = [];
+  sourceCntRows: Number[] = [];
+  targetCntRows: Number[] = [];
+  diffCntRows: Number[] = [];
+
   private getDiffsSub: any;
+  private getSourceCntSub: any;
+  private getTargetCntSub: any;
+  private getDiffCntSub: any;
   private timeSet: any;
 
-  constructor(private router: Router, private diffs: GS1GetMigartionDiffsService) { }
+  constructor(private router: Router, private migr: GS1GetMigartionDiffsService) { }
 
   ngOnInit() {
 
-    this.getData(); 
+    this.getData();
+    this.getSourceCount();
+    this.getTargetCount();
+    this.getDiffCount();
 
     this.timeSet = setInterval(() => {
       this.getData(); 
+      this.getSourceCount();
+      this.getTargetCount();
+      this.getDiffCount();      
     }, 1000);
   }
 
   getData () : void
   {
     this.getDiffsSub =
-    this.diffs.getDiffRows().subscribe(data => {
+    this.migr.getDiffRows().subscribe(data => {
         this.diffRows = data;
       }
     );
@@ -49,11 +62,43 @@ export class Gs1GoogleAnalList3Component implements OnInit, OnDestroy {
     };
   }
 
+<<<<<<< HEAD
+  getSourceCount () : void
+  {
+    this.getSourceCntSub =
+    this.migr.getSourceDataCount().subscribe(data => {
+        this.sourceCntRows = data;
+      }
+    );
+  }
+
+  getTargetCount () : void
+  {
+    this.getTargetCntSub =
+    this.migr.getTargetDataCount().subscribe(data => {
+        this.targetCntRows = data;
+      }
+    );
+  }
+
+  getDiffCount () : void
+  {
+    this.getDiffCntSub =
+    this.migr.getDiffDataCount().subscribe(data => {
+        this.diffCntRows = data;
+      }
+    );
+  }
+
+=======
+>>>>>>> fe35f3f62389adb551200ed7e2377080687b5265
   // call the "unsubscribe()" methods on any saved subscriptions within the component
   ngOnDestroy() {
 
     clearInterval(this.timeSet);
     this.getDiffsSub.unsubscribe();
+    this.getSourceCntSub.unsubscribe();
+    this.getTargetCntSub.unsubscribe();
+    this.getDiffCntSub.unsubscribe();    
   }
-
 }
