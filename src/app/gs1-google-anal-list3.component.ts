@@ -62,7 +62,6 @@ export class Gs1GoogleAnalList3Component implements OnInit, OnDestroy {
     };
   }
 
-<<<<<<< HEAD
   getSourceCount () : void
   {
     this.getSourceCntSub =
@@ -89,9 +88,6 @@ export class Gs1GoogleAnalList3Component implements OnInit, OnDestroy {
       }
     );
   }
-
-=======
->>>>>>> fe35f3f62389adb551200ed7e2377080687b5265
   // call the "unsubscribe()" methods on any saved subscriptions within the component
   ngOnDestroy() {
 
