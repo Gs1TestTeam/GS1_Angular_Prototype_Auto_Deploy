@@ -7,8 +7,8 @@ import { GS1UiDifferenceRowsIF } from './gs1-ui-components-classes/GS1UiDifferen
 })
 export class GS1GetMigartionDiffsService {
 
-  urlString = 'https://enigmatic-hamlet-75507.herokuapp.com';
-  //urlString = 'http://localhost:8081';
+ //urlString = 'https://enigmatic-hamlet-75507.herokuapp.com';
+urlString = 'http://localhost:8081';
   
   constructor(private http: HttpClient) { }
   

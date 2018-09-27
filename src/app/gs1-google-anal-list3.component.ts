@@ -14,9 +14,10 @@ export class Gs1GoogleAnalList3Component implements OnInit, OnDestroy {
   pageTitle: string = "GS1 Migration Data Integrity";
 
   diffRows: GS1UiDifferenceRowsIF[] = [];
-  sourceCntRows: Number[] = [];
-  targetCntRows: Number[] = [];
+  sourceCntRows: any;
+  targetCntRows: any;
   diffCntRows: Number[] = [];
+  percent: Number;
 
   private getDiffsSub: any;
   private getSourceCntSub: any;
@@ -37,7 +38,10 @@ export class Gs1GoogleAnalList3Component implements OnInit, OnDestroy {
       this.getData(); 
       this.getSourceCount();
       this.getTargetCount();
-      this.getDiffCount();      
+      this.getDiffCount();
+      
+      this.percent = Math.round(this.targetCntRows/this.sourceCntRows)*100;
+      
     }, 1000);
   }
 
